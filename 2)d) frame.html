@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Frames Using IFrames</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    td {
+      vertical-align: top;
+      padding: 10px;
+    }
+    iframe {
+      border: 1px solid black;
+      width: 100%;
+      height: 300px;
+    }
+    h2 {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Frames Examples Using IFrames</h2>
+
+<table>
+  <tr>
+    <td width="30%">
+      <iframe srcdoc="
+        <h3>Image Frame</h3>
+        <img src='forest.jpg' width='300' height='300'>
+      "></iframe>
+    </td>
+    <td width="40%">
+      <iframe srcdoc="
+        <h3>Paragraph Frame</h3>
+        <p>Frames divide a browser window into multiple sections, allowing independent content in each.</p>
+      "></iframe>
+    </td>
+    <td width="30%">
+      <iframe srcdoc="
+        <h3>Link Frame</h3>
+        <a href='http://www.twitter.com' target='_blank'>Open Twitter</a>
+      "></iframe>
+    </td>
+  </tr>
+</table>
+
+<!-- Additional iframe example -->
+<iframe width="100%" height="300" srcdoc="
+  <h3>Extra Frame</h3>
+  <p>This is a full-width iframe for additional content or embedded tools.</p>
+"></iframe>
+
+</body>
+</html>

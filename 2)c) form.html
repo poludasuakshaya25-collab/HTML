@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+  <style>
+    table {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 4px;
+    }
+    td {
+      padding: 8px;
+    }
+  </style>
+</head>
+<body>
+
+<form action="#" method="post">
+  <table border="1" cellpadding="4" cellspacing="0">
+    <caption><b>Fill in your details</b></caption>
+
+    <!-- Text Field -->
+    <tr>
+      <td>Full Name:</td>
+      <td><input type="text" name="fullname" required></td>
+    </tr>
+
+    <!-- Password Field -->
+    <tr>
+      <td>Password:</td>
+      <td><input type="password" name="password" required></td>
+    </tr>
+
+    <!-- Number Field -->
+    <tr>
+      <td>Age:</td>
+      <td><input type="number" name="age" min="1" max="120"></td>
+    </tr>
+
+    <!-- Date of Birth Field -->
+    <tr>
+      <td>Date of Birth:</td>
+      <td><input type="date" name="dob"></td>
+    </tr>
+
+    <!-- Gender Radio Buttons -->
+    <tr>
+      <td>Gender:</td>
+      <td>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="other"> Other
+      </td>
+    </tr>
+
+    <!-- Interests Checkboxes -->
+    <tr>
+      <td>Interests:</td>
+      <td>
+        <input type="checkbox" name="interest" value="web development"> Web Development
+        <input type="checkbox" name="interest" value="data science"> Data Science
+        <input type="checkbox" name="interest" value="gaming"> Gaming
+      </td>
+    </tr>
+
+    <!-- Submit Button -->
+    <tr>
+      <td colspan="2" style="text-align:center;">
+        <input type="submit" value="Register">
+      </td>
+    </tr>
+  </table>
+</form>
+
+</body>
+</html>
