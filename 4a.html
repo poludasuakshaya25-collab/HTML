@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Selectors Compact Demo</title>
+<style>
+/* Simple */
+p {color: indigo; font-size:12px;}
+#pageTitle {color: darkgreen; font-size:14px;}
+.note {background: lavender; font-size:12px;}
+h2,h4 {color: royalblue; font-size:13px;}
+
+/* Universal */
+* {font-family: Arial, sans-serif; font-size:12px;}
+
+/* Combinatory */
+section p {color: maroon;}
+ol>li {color: darkorange;}
+h3+p {color: darkviolet;}
+h1~p {color: darkcyan;}
+
+/* Pseudo-class */
+a:hover {color: crimson;}
+
+/* Pseudo-element */
+p::first-letter {font-size:16px; color:black;}
+
+/* Attribute */
+input[type="email"] {background: mintcream; font-size:12px;}
+</style>
+</head>
+<body>
+<h1 id="pageTitle">CSS Selector Gallery</h1>
+
+<h2>Simple Selectors</h2>
+<p>Element selector example.</p>
+<p class="note">Class selector example.</p>
+
+<h2>Combinatory Selectors</h2>
+<section><p>Descendant selector inside section.</p></section>
+<ol><li>Child selector 1</li><li>Child selector 2</li></ol>
+<h3>Adjacent Sibling</h3><p>Paragraph after h3.</p>
+<h3>General Sibling</h3><p>Sibling 1</p><p>Sibling 2</p>
+
+<h2>Pseudo Selectors</h2>
+<a href="#">Hover link</a>
+
+<h2>Attribute Selector</h2>
+<input type="email" placeholder="Email">
+<input type="password" placeholder="Password">
+</body>
+</html>
+
