@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Objects Demo</title>
+</head>
+<body>
+  <h1 id="heading">Hello World!</h1>
+  <p id="info"></p>
+  <button onclick="showDocumentInfo()">Show Document Info</button>
+  <button onclick="showUserObject()">Show User Object</button>
+
+  <script>
+    // Pre-defined object: document
+    function showDocumentInfo() {
+      // Using document properties
+      let title = document.title;
+      let url = document.URL;
+      let lastModified = document.lastModified;
+
+      // Using document methods
+      document.getElementById("info").innerHTML =
+        "<b>Document Title:</b> " + title + "<br>" +
+        "<b>Document URL:</b> " + url + "<br>" +
+        "<b>Last Modified:</b> " + lastModified;
+    }
+
+    // User-defined object
+    let student = {
+      name: "Akshaya",
+      age: 21,
+      course: "Computer Science",
+      displayInfo: function() {
+        return "Name: " + this.name + "<br>" +
+               "Age: " + this.age + "<br>" +
+               "Course: " + this.course;
+      }
+    };
+
+    function showUserObject() {
+      document.getElementById("info").innerHTML = student.displayInfo();
+    }
+  </script>
+</body>
+</html>
